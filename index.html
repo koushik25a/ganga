@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>For My Precious Ganga ❤️</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(135deg, #ff758c, #ff7eb3);
+      color: white;
+      text-align: center;
+    }
+
+    .box {
+      background: rgba(0,0,0,0.25);
+      padding: 30px;
+      border-radius: 20px;
+      max-width: 360px;
+      animation: fadeIn 2s ease;
+    }
+
+    h1 {
+      font-size: 26px;
+      margin-bottom: 15px;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 12px 25px;
+      font-size: 16px;
+      border: none;
+      border-radius: 30px;
+      background: #ff4d6d;
+      color: white;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #ff2e55;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.9); }
+      to { opacity: 1; transform: scale(1); }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="box">
+    <h1>My Precious Ganga ❤️</h1>
+
+    <p>
+      You are my precious gift from God.  
+      Every smile of yours makes my world brighter.  
+      I don’t know about tomorrow,  
+      but I know I want **you** in my life.
+    </p>
+
+    <button onclick="playMusic()">Will you be mine? 💍</button>
+  </div>
+
+  <audio id="music" loop>
+    <source src="music.mp3" type="audio/mpeg">
+  </audio>
+
+  <script>
+    function playMusic() {
+      document.getElementById("music").play();
+      alert("Waiting for your YES ❤️");
+    }
+  </script>
+
+</body>
+</html>
